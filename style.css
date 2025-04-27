@@ -1,0 +1,68 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+#app-container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: background-color 0.5s ease; /* Smooth transition */
+  color: white;
+}
+
+#app-container.state-initial {
+  background-color: #2ecc71; /* Green */
+}
+
+#app-container.state-final {
+  background-color: #e74c3c; /* Red */
+}
+
+#main-text {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#quote-text {
+  font-size: 1.5em;
+  margin-top: 20px;
+  font-style: italic;
+  max-width: 80%;
+}
+
+#action-button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1c40f; /* Yellowish */
+  color: #333;
+  margin-top: 30px;
+}
+
+#action-button:hover {
+  background-color: #f39c12; /* Darker Yellowish */
+}
+
+/* Optional: Style for timer display */
+/*
+#timer-display {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.8);
+}
+*/
+
+.hidden {
+  display: none;
+}
